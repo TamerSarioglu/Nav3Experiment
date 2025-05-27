@@ -1,14 +1,14 @@
 package com.tamersarioglu.nav3experiment
 
 import androidx.compose.runtime.mutableStateMapOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.setValue
 
 object CartRepository {
     private val cartItems = mutableStateMapOf<String, CartItem>()
     
-    var totalItemsInCart by mutableStateOf(0)
+    var totalItemsInCart by mutableIntStateOf(0)
         private set
     
     fun addToCart(productId: String, productName: String) {
