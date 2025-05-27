@@ -54,6 +54,10 @@ fun ProductListScreenPreview() {
 @Composable
 fun ProductDetailScreenPreview() {
     Nav3SampleTheme {
-        ProductDetailScreen(productId = "1", productName = "Smartphone")
+        ProductDetailScreen(
+            productId = "1", 
+            productName = "Smartphone",
+            viewModel = ProductDetailViewModel("1", "Smartphone")
+        )
     }
 }
